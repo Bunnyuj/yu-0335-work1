@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PPULBATU - TXT</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+        }
+        .wrapper {
+            position: relative;
+            padding: 40px 20px;
+        }
+        /* 淡淡的虚线参考线，和原图一样 */
+        .dashed-bg {
+            position: absolute;
+            inset: 0;
+            background-image: 
+                repeating-linear-gradient(
+                    transparent 0px,
+                    transparent 44px,
+                    #dddddd 44px,
+                    #dddddd 45px
+                );
+            opacity: 0.5;
+            z-index: 0;
+        }
+        .line-bottom {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 32px;
+            height: 2px;
+            background-color: #999999;
+        }
+        .row {
+            display: flex;
+            gap: 48px;
+            position: relative;
+            z-index: 1;
+        }
+        .item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .item img {
+            height: 220px;
+            object-fit: contain;
+        }
+        .name {
+            margin-top:14px;
+            font-weight: bold;
+            font-size:18px;
+            text-transform: uppercase;
+            color:#111111;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="dashed-bg"></div>
+        <div class="line-bottom"></div>
+        <div class="row">
+            <div class="item">
+                <img src="https://quartogeek.com.br/cdn/shop/files/1-940.png" alt="CHOI YONG MEONG">
+                <div class="name">CHOI YONG MEONG</div>
+            </div>
+            <div class="item">
+                <img src="https://quartogeek.com.br/cdn/shop/files/2-873.png" alt="HWANG CHOON">
+                <div class="name">HWANG CHOON</div>
+            </div>
+            <div class="item">
+                <img src="https://quartogeek.com.br/cdn/shop/files/3-564.png" alt="BAMGEUT">
+                <div class="name">BAMGEUT</div>
+            </div>
+            <div class="item">
+                <img src="https://quartogeek.com.br/cdn/shop/files/4-824.png" alt="DA-GO-NYANG">
+                <div class="name">DA-GO-NYANG</div>
+            </div>
+            <div class="item">
+                <img src="https://quartogeek.com.br/cdn/shop/files/5-772.png" alt="HHM NYA RING">
+                <div class="name">HHM NYA RING</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
